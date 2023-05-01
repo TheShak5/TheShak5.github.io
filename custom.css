@@ -2,14 +2,3 @@ a.linkstyle:hover {
   color: #fff ;
   box-shadow: inset 200px 0 0 0 #0c769c;;
 }
-
-.brand {
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fgrey-background&psig=AOvVaw2wzmImyftRP7BNXLBkQm2a&ust=1683055301692000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNDLnN3r1P4CFQAAAAAdAAAAABAE);
-}
