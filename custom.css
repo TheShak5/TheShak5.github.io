@@ -1,7 +1,8 @@
 
 .header-cover {
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
 
 }
