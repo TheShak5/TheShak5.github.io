@@ -1,9 +1,12 @@
 
 .nav-banner {
-    height: 10px;
+    height: 10px auto;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100%;
-    opacity: 1;
+    width: 100% auto;
+    opacity: 1 auto;
+    border: 0% auto;
+    padding: 0% auto;
+    margin: 0% auto;
 
 }
