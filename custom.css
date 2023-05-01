@@ -1,4 +1,4 @@
 a.linkstyle:hover {
-  color: #fff;
+  color: #fff !important;
   box-shadow: inset 200px 0 0 0 #54b3d6 !important;;
 }
