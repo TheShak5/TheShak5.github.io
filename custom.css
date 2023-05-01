@@ -1,7 +1,7 @@
-a.linkstyle:hover {
+#bs-example-navbar-collapse-1.linkstyle:hover {
       color: hotpink;
 }
 
-a.linkstyle:active {
+#bs-example-navbar-collapse-1.linkstyle:active {
       color: blue;
 }
