@@ -2,3 +2,14 @@ a.linkstyle:hover {
   color: #fff ;
   box-shadow: inset 200px 0 0 0 #0c769c;;
 }
+
+.brand {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/hex-logo.svg);
+}
