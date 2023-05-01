@@ -1,6 +1,7 @@
-.nav-banner {
-    opacity: 1 ;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 100vw;
+a.linkstyle:hover {
+      color: hotpink;
+}
+
+a.linkstyle:active {
+      color: blue;
 }
