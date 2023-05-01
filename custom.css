@@ -2,13 +2,3 @@ a.linkstyle:hover {
   color: #fff;
   box-shadow: inset 200px 0 0 0 #54b3d6 !important;;
 }
-
-/* Presentational styles */
-a.linkstyle{
-  color: #54b3d6 !important;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 27px !important;
-  font-weight: 700 !important;
-  line-height: 1.5 !important;
-  text-decoration: none !important;
-}
