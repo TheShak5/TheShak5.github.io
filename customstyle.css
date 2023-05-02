@@ -1,7 +1,7 @@
 html {
     height: 100%;
     overflow: hidden;
-    /* background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%); */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(#2b1055, #7597de);
+  background: #000000;
 }
 
 a.linkstyle:hover {
