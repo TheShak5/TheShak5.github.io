@@ -28,41 +28,60 @@ a.linkstyle:hover {
   box-shadow: inset 200px 0 0 0 #0c769c;;
 }
 
-/* nav {
+/* For Home Page Two Column Content */
+.row {
+  display: flex;
+}
+
+.column1 {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #000000;
-}
-
-nav div ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav div ul li {
-  list-style: none;
-  margin-left: 20px;
-}
-
-nav div ul li a {
-  text-decoration: none;
-  padding: 6px 15px;
+  right: 50vw;
   color: #fff;
-  font-family: 'Oswald';
-} */
+  text-align: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
 
-#title {
-    position: absolute;
+.column2 {
+  position: absolute;
+  top: 50%;
+  left: 50vw;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+#img-home{
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+}
+
+#infotitle {
+    /* position: absolute;
     top: 50%;
     left: 0;
-    right: 0;
+    right: 0; */
     color: #fff;
     text-align: center;
     font-family: Lato;
@@ -73,12 +92,76 @@ nav div ul li a {
     padding-left: 10px;
 }
 
-#title span {
+#infotitle span {
     background: -webkit-linear-gradient(white, #38495a);
+    /* background: -webkit-linear-gradient(var(--mainColor), #38495a);
+    background: -webkit-linear-gradient(white, var(--mainColor)); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+/* CSS for Fancy Link Hover Effect for Social Links */
+:root {
+  --mainColor: #0c769c;
+}
+
+#sociallinks {
+  color: white;
+  text-align: center;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 100px;
+}
+
+#sociallinks a {
+
+  background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent 5px
+     );
+  background-repeat: repeat-x;
+  background-size: 100%;
+  color: white;
+  padding-left: 10px;
+  text-decoration: none;
+
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  transition: all .3s;
+
+  &:hover {
+   color: white;
+
+    &:after {
+      max-width: 100%;
+    }
+  }
+
+  &:after {
+    content: attr(data-txthover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 0;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: max-width .3s ease-out;
+  }
+}
+
+#sociallinks a:hover {
+  background: linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 0px, transparent);
+}
+
+/* Dynamic Star Parallax Background */
 #stars {
     width: 1px;
     height: 1px;
