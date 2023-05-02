@@ -9,6 +9,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="customstyle.css">
 </head>
 <body>
@@ -21,28 +22,44 @@
   </section>
 
   <!-- Navigation -->
-  <div class="navbar">
+  <div class="navbar" id="myNav">
     <a href="index.html" class="linkstyle">Home</a>
     <a href="aboutme.html" class="linkstyle">About Me</a>
     <a href="research.html" class="linkstyle">Research</a>
     <a href="pub_talks.html" class="linkstyle">Publications/Talks</a>
     <a href="Darshak_Patel_CV.pdf" class="linkstyle">CV</a>
+    <a class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+
+  <script>
+      function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+  </script>
 
   <!-- Content for Home Page -->
   <div class="row">
 
     <!-- Home Page Image -->
-    <div class="column1">
-      <img src="V2/images/empty_profilepic.png" alt="">
+    <div class="column">
+      <div id="leftcontent">
+        <img src="V2/images/empty_profilepic.png" alt="">
+      </div>
     </div>
 
     <!-- Home Page Bio Content -->
-    <div class="column2">
-      <div id="infotitle">
+    <div class="column">
+      <div id="rightcontent">
       <span><b>Darshak A. Patel</b></span>
       <span style="font-size:20px"><b>[he/him]</b></span><br>
-      </div>
+
 
       <p style="font-size:14px">Department of Physics & Astronomy
       <p style="font-size:14px">University of Waterloo, Canada</p><br>
@@ -54,6 +71,7 @@
         <p style="font-size:12px"><a href="https://github.com/TheShak5">GitHub</a>
           <a href="https://www.linkedin.com/in/darshakpatel5/">LinkedIn</a>
         </p>
+      </div>
       </div>
 
     </div>
