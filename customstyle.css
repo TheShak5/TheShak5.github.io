@@ -4,6 +4,23 @@ html {
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+a.linkstyle:hover {
+  color: #fff ;
+  box-shadow: inset 200px 0 0 0 #0c769c;;
+}
+
 #title {
     position: absolute;
     top: 50%;
