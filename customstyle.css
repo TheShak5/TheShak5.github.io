@@ -32,6 +32,7 @@ nav div ul li a {
   text-decoration: none;
   padding: 6px 15px;
   color: #fff;
+  font-family: 'Oswald';
 }
 
 a.linkstyle:hover {
