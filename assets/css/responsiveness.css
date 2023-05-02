@@ -1,0 +1,167 @@
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding-top: 0;
+    background: black;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .navbar nav li {
+    width: 100%;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  .navbar::before {
+    font-size: 40px;
+    content: "\2630";
+    display: block;
+    padding: 20px;
+    color: white;
+    padding-bottom: 0;
+  }
+  .navbar.hide-mobile nav {
+    display: none;
+  }
+
+  body.home {
+    background-size: auto;
+  }
+
+  body.home .navbar.hide-mobile {
+    background: none;
+  }
+
+  .navbar.hide-mobile::before {
+    padding-bottom: 20px;
+  }
+
+
+
+  body.home header {
+    height: 90vh;
+  }
+
+  .page header img {
+    width: 80px;
+  }
+
+  .page header h1 {
+    font-size: 26px;
+  }
+
+  .brand {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-size: contain;
+  }
+
+  body.home .brand h1 { font-size: 50px;}
+  body.home .brand h2 { font-size: 16px;}
+
+  .video-container {margin-bottom: 100px;}
+
+  .page {
+    width: 100%;
+  }
+
+  section {
+    padding-bottom: 0;
+  }
+
+  .content {
+    width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .content h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .content article h4 {
+    font-size: 20px;
+  }
+
+  .preview {
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+  }
+
+  .preview__icon {
+    width: 100px;
+  }
+
+  article .article__header {
+    margin: 0;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  img.full-width {
+    margin-bottom: 30px;
+  }
+
+  .row-images img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .row > .pull-left {
+    width: 50% !important;
+    margin-right: 0 !important;
+    align-self: center !important;
+  }
+
+  .ui-accordion {
+    width: 100%;
+  }
+
+  .ui-accordion-header {
+    margin-top: 5px !important;
+    text-align: center;
+  }
+
+  body.contact .page { height: 100vh;}
+
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer strong {
+    font-size: 20px;
+  }
+
+  footer img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .page {
+    width: 100% !important;
+  }
+
+  body.contact .page { height: 100vh;}
+
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

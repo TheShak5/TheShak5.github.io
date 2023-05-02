@@ -60,6 +60,7 @@ a.linkstyle:hover {
 /* For Home Page Two Column Content */
 .row {
   display: flex;
+  flex-direction: column;
 }
 
 .row:after {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,75 +9,52 @@
 
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="customstyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsiveness.css">
+    <link rel="stylesheet" href="assets/css/dynamicbackground.css">
+    <script src="assets/js/responsive.js"></script>
 </head>
-<body>
 
-  <!-- Background Dynamic Stars -->
-  <section class="wrapper">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </section>
-
+<body class="home">
   <!-- Navigation -->
-  <div class="navbar" id="myNav">
-    <a href="index.html" class="linkstyle">Home</a>
-    <a href="aboutme.html" class="linkstyle">About Me</a>
-    <a href="research.html" class="linkstyle">Research</a>
-    <a href="pub_talks.html" class="linkstyle">Publications/Talks</a>
-    <a href="Darshak_Patel_CV.pdf" class="linkstyle">CV</a>
-    <a class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+  <div class="navbar hide-mobile" id="nav_toggle">
+    <nav>
+      <ul>
+        <li class="active">Home</li>
+        <!-- <a href="index.html" class="linkstyle">Home</a> -->
+        <li><a href="aboutme.html" class="linkstyle">About Me</a></li>
+        <li><a href="research.html" class="linkstyle">Research</a></li>
+        <li><a href="pub_talks.html" class="linkstyle">Publications/Talks</a></li>
+        <li><a href="Darshak_Patel_CV.pdf" class="linkstyle">CV</a></li>
+      </ul>
+    </nav>
   </div>
 
-  <!-- Function for Toggling Responsive Nav Bar -->
-  <script>
-      function myFunction() {
-        var x = document.getElementById("myNav");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
-      }
-  </script>
+  <div class="page">
+    <div class="content">
+      <div class="row">
 
-  <!-- Content for Home Page -->
-  <div class="row">
+        <article class="preview">
+          <img src="V2/images/empty_profilepic.png" alt="" class="preview__icon">
+        </article>
 
-    <!-- Home Page Image -->
-    <div class="column">
-      <div id="leftcontent">
-        <img src="V2/images/empty_profilepic.png" alt="">
+        <article class="preview">
+          <h1>Darshak Patel</h1>
+          <h1>[he/him]</h1><br>
+          <p>Department of Physics & Astronomy
+          <p>University of Waterloo, Canada</p><br>
+          <p>da26pate[at]uwaterloo[dot]ca
+          <p>pateldarshak55[at]gmail[dot]com</p>
+
+          <p style="font-size:12px"><a href="https://github.com/TheShak5">GitHub</a>
+            <a href="https://www.linkedin.com/in/darshakpatel5/">LinkedIn</a>
+          </p>
+        </article>
       </div>
-    </div>
-
-    <!-- Home Page Bio Content -->
-    <div class="column">
-      <div id="rightcontent">
-      <span><b>Darshak A. Patel</b></span>
-      <span style="font-size:20px"><b>[he/him]</b></span><br>
-
-
-      <p style="font-size:14px">Department of Physics & Astronomy
-      <p style="font-size:14px">University of Waterloo, Canada</p><br>
-
-      <p style="font-size:14px; letter-spacing=1px">da26pate[at]uwaterloo[dot]ca
-      <p style="font-size:14px">pateldarshak55[at]gmail[dot]com</p>
-
-      <div id="sociallinks">
-        <p style="font-size:12px"><a href="https://github.com/TheShak5">GitHub</a>
-          <a href="https://www.linkedin.com/in/darshakpatel5/">LinkedIn</a>
-        </p>
-      </div>
-      </div>
-
     </div>
   </div>
-
 </body>
 
 </html>
