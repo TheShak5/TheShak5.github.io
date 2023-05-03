@@ -66,7 +66,7 @@ nav li a {
   text-align: center;
   font-family: Lato;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 6.5vmin;
   letter-spacing: 10px;
   white-space: nowrap; /* makes sure it's all on one line */
 
@@ -86,8 +86,8 @@ nav li a {
   text-align: center;
   font-family: Lato;
   font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 10px;
+  font-size: 1.5vmin;
+  letter-spacing: 8px;
   white-space: nowrap; /* makes sure it's all on one line */
 
 }
@@ -103,7 +103,7 @@ nav li a {
   text-align: center;
   font-family: Lato;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.5vmin;
   margin: 5px;
 
   background:
