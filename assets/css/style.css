@@ -124,7 +124,7 @@ nav li a {
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  color: grey;
+  color: #C0C0C0;
   transition: all .3s;
 
   &:hover {
