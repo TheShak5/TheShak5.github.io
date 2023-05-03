@@ -23,7 +23,7 @@ nav li {
 nav li.active {
   float: left;
   display: block;
-  color: #0c769c;
+  color: white; /*#0c769c */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
