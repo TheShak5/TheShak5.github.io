@@ -1,6 +1,6 @@
 html {
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
+    overflow: auto;
     overflow-anchor: none;
     /* background-color: grey; */
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
