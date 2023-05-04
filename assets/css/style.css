@@ -89,8 +89,9 @@ nav li a {
   font-size: 1.5vmin;
   letter-spacing: 5px;
   white-space: nowrap; /* makes sure it's all on one line */
-
+  /* background-color: #333; */
 }
+
 /* =============================================================================== */
 /* =============== Fancy Link Hover Effect for Social Links ====================== */
 /* =============================================================================== */
@@ -125,6 +126,7 @@ nav li a {
   text-transform: uppercase;
   color: #C0C0C0;
   transition: all .3s;
+  background-color: transparent;
 
   &:hover {
    color: white;
