@@ -19,6 +19,33 @@
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
+.pubtalkspage {
+  height: 100vh;
+  overflow: auto;
+  overflow-anchor: none;
+  /* background-image: url('/assets/img/test.jpg');
+  background-color: transparent;   */
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.researchpage {
+  height: 100vh;
+  overflow: auto;
+  overflow-anchor: none;
+  /* background-image: url('/assets/img/test.jpg');
+  background-color: transparent;   */
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.gallerypage {
+  height: 100vh;
+  overflow: auto;
+  overflow-anchor: none;
+  /* background-image: url('/assets/img/test.jpg');
+  background-color: transparent;   */
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
 /* =============================================================================== */
 /* ========================== Navigation Bar CSS ================================= */
 /* =============================================================================== */
