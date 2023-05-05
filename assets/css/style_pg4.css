@@ -116,13 +116,18 @@ nav li a {
     font-family: Lato;
 }
 
+/* =============================================================================== */
+/* =========================== Animated Underline ================================ */
+/* =============================================================================== */
+/* https: //stackoverflow.com/questions/41474622/underlining-text-using-transition-on-page-load-with-a-delay */
+
 .sec {
     display: inline-block;
     position: relative;
     padding-bottom: 3px;
 }
 
-@-webkit-keyframes border {
+@keyframes border {
     from {
         width: 0px;
     }
@@ -150,14 +155,15 @@ nav li a {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 } 
+
 /* =============================================================================== */
 /* ============================== General CSS ==================================== */
 /* =============================================================================== */
-.preview {
-    /* width:210px; */
-    /* font-weight: 300; */
+/* .preview {
+    width:210px;
+    font-weight: 300;
 
-    /* width: 200px;
+    width: 200px;
     padding-top: 20px;
     font-size: 16px;
     
@@ -168,11 +174,11 @@ nav li a {
     text-align: center;
     z-index: 1;
     padding-left: 5vmin;
-    flex: 0 0 auto !important; */
+    flex: 0 0 auto !important;
     
-    /* background: rgba(10,10,10,0.9); */
-    /* border: 2px solid #222; */
-}
+    background: rgba(10,10,10,0.9); 
+    border: 2px solid #222; 
+} */
 
 .row {
     display: flex;
