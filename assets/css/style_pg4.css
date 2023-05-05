@@ -1,0 +1,178 @@
+/* =============================================================================== */
+/* ======================= HTML Tag CSS for the Page ============================= */
+/* =============================================================================== */
+.pubtalkspage {
+    height: 100vh;
+    overflow: auto;
+    overflow-anchor: none;
+    background-color: black;
+    /* background: url('../img/test5.jpg'); */
+    /* background-color: transparent;   */
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+}
+
+/* =============================================================================== */
+/* ========================== Navigation Bar CSS ================================= */
+/* =============================================================================== */
+
+li {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-family: Lato
+}
+
+nav li.active {
+    float: left;
+    display: block;
+    color: white;
+    /*#0c769c */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #0c769c;
+    ;
+}
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 0px;
+    margin-bottom: 5vh;
+    background-color: #333;
+}
+
+/* =============================================================================== */
+/* ============================= Page Content CSS ================================ */
+/* =============================================================================== */
+
+.content h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: 'Lato';
+    margin: 0;
+
+    text-align: left;
+    font-family: Lato;
+    font-size: 6.5vmin;
+    letter-spacing: 10px;
+    white-space: nowrap; /* makes sure it's all on one line */
+}
+
+.content p {
+    min-height: 0px;
+    padding: 0px;
+    margin: 5px;
+
+    color: #fff;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 1.5vmin;
+    letter-spacing: 5px;
+    white-space: nowrap; /* makes sure it's all on one line */
+    /* background-color: #333; */
+}
+
+.talks {
+    color: lightgrey;
+    font-family: Lato;
+}
+
+.talks ul li {
+    font-size: 2vmin;
+}
+
+.talktitle {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.publications {
+    color: white;
+    font-family: Lato;
+}
+
+/* =============================================================================== */
+/* ============================== General CSS ==================================== */
+/* =============================================================================== */
+.page{
+    width: 100% !important;
+}
+
+.preview {
+    /* width:210px; */
+    /* font-weight: 300; */
+
+    /* width: 200px;
+    padding-top: 20px;
+    font-size: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    padding-left: 5vmin;
+    flex: 0 0 auto !important; */
+    
+    /* background: rgba(10,10,10,0.9); */
+    /* border: 2px solid #222; */
+}
+
+.row {
+    display: flex;
+    justify-content: normal;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.row article {
+    top: 50%;
+}
+
+.row.row--centered {
+    justify-content: center;
+}
+
+.row.row--centered>* {
+    flex: 0 0 auto;
+}
+
+.row>* {
+    flex: 1 1 auto;
+}
+
+.row>.pull-left {
+    width: 250px;
+    margin-right: 50px;
+    flex: 0 0 auto;
+}
+
+.row>img {
+    margin-top: 25px;
+}
