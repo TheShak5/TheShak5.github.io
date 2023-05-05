@@ -116,13 +116,43 @@ nav li a {
     font-family: Lato;
 }
 
+.sec {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+@-webkit-keyframes border {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.sec:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: rgb(211, 110, 211);
+    -webkit-animation-name: border;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+} 
 /* =============================================================================== */
 /* ============================== General CSS ==================================== */
 /* =============================================================================== */
-.page{
-    width: 100% !important;
-}
-
 .preview {
     /* width:210px; */
     /* font-weight: 300; */
