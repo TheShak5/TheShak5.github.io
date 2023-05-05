@@ -1,0 +1,166 @@
+/* =============================================================================== */
+/* ======================= HTML Tag CSS for the Page ============================= */
+/* =============================================================================== */
+.gallerypage {
+    height: 100vh;
+    overflow: auto;
+    overflow-anchor: none;
+    background-color: black;
+    /* background: url('../img/test5.jpg'); */
+    /* background-color: transparent;   */
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+}
+
+/* =============================================================================== */
+/* ========================== Navigation Bar CSS ================================= */
+/* =============================================================================== */
+
+li {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-family: Lato
+}
+
+nav li.active {
+    float: left;
+    display: block;
+    color: white;
+    /*#0c769c */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #0c769c;
+    ;
+}
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 0px;
+    margin-bottom: 5vh;
+    background-color: #333;
+}
+
+/* =============================================================================== */
+/* ============================= Gallery CSS ===================================== */
+/* =============================================================================== */
+/* Sources: 
+https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea */
+/* https: //stackoverflow.com/questions/20953264/grey-out-all-images-other-than-active-hover-image */
+/* and ChatGPT */
+
+.gallery {
+    line-height: 0;
+    -webkit-column-count: 5;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
+
+/* .gallery:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+} */
+
+.gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    /* to match column gap */
+    transition: filter 1s;
+    /* filter: none; */
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    .gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* =============================================================================== */
+/* ============================== General CSS ==================================== */
+/* =============================================================================== */
+.row {
+    display: flex;
+    justify-content: normal;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.row article {
+    top: 50%;
+}
+
+.row.row--centered {
+    justify-content: center;
+}
+
+.row.row--centered>* {
+    flex: 0 0 auto;
+}
+
+.row>* {
+    flex: 1 1 auto;
+}
+
+.row>.pull-left {
+    width: 250px;
+    margin-right: 50px;
+    flex: 0 0 auto;
+}
+
+.row>img {
+    margin-top: 25px;
+}

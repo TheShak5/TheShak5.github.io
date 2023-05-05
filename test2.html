@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <style>
+        /* Styles for the images */
+        .image-container {
+            position: relative;
+            margin: 10px;
+            float: left;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .image-container:hover img {
+            filter: grayscale(100%);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="image-container">
+            <img src="assets/img/book.jpg" alt="Image 1">
+            <div class="caption">Caption for Image 1</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/img/test.jpg" alt="Image 2">
+            <div class="caption">Caption for Image 2</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/img/test2.jpg" alt="Image 3">
+            <div class="caption">Caption for Image 3</div>
+        </div>
+        <div class="image-container">
+            <img src="assets/img/test3.jpg" alt="Image 4">
+            <div class="caption">Caption for Image 4</div>
+        </div>
+    </div>
+    <script>
+        function grayscaleGallery() {
+            var images = document.querySelectorAll('#gallery img');
+
+            for (var i = 0; i < images.length; i++) {
+                images[i].addEventListener('mouseover', function () {
+                    for (var j = 0; j < images.length; j++) {
+                        if (images[j] !== this) {
+                            images[j].style.filter = 'grayscale(100%)';
+                        }
+                    }
+                });
+
+                images[i].addEventListener('mouseout', function () {
+                    for (var j = 0; j < images.length; j++) {
+                        images[j].style.filter = 'grayscale(0%)';
+                    }
+                });
+            }
+        }
+
+        grayscaleGallery();
+    </script>
+</body>
+
+</html>
