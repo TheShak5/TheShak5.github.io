@@ -5,7 +5,7 @@
     height: 100vh;
     overflow: auto;
     overflow-anchor: none;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+    background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
 
     
 }
@@ -140,7 +140,7 @@ h1 {
     text-align: left;
     font-family: Lato;
     font-size: 2vmin;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
     white-space: nowrap; /* makes sure it's all on one line */
 
     margin-bottom: 2vh;
