@@ -92,6 +92,11 @@
     box-sizing: border-box;
   }
 
+  article.preview img{
+    margin-bottom: 0;
+    width: 30vmax;
+    height: 68vmin;
+  }
   .preview__icon {
     width: 100px;
   }
