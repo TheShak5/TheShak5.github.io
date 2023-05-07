@@ -133,6 +133,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
     .gallery img {
         border: 1px solid #ffffff80;
     }
+
+    .grayouteffect {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
@@ -144,6 +148,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
 
     .gallery img {
         border: 1px solid #ffffff80;
+    }
+
+    .grayouteffect {
+        display: none;
     }
 }
 
