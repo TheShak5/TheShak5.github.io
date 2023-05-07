@@ -91,7 +91,7 @@ nav li a {
   text-align: center;
   font-family: Lato;
   font-weight: 300;
-  font-size: 2vmin;
+  font-size: 2rem;
   letter-spacing: 0px;
   white-space: nowrap; /* makes sure it's all on one line */
   /* background-color: #333; */
@@ -109,9 +109,12 @@ nav li a {
 
 .contactinfo h3 {
   /* text-align: left; */
+  margin-top: 100px;
+  text-align: center;
   font-family: Lato;
   font-weight: bold;
   font-size: 2vmin;
+  color: white;
 }
 
 /* =============================================================================== */
@@ -178,6 +181,18 @@ nav li a {
 /* =============================================================================== */
 /* ============================== General CSS ==================================== */
 /* =============================================================================== */
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
 article {
   margin-bottom: 50px;
@@ -238,23 +253,6 @@ article .article__header h4 {
 }
 
 
-.contactinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  text-align: start;
-
-  /* height: 2px; */
-  border: 3px solid #FFFFFF20;
-}
-
-.row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 20px;
-}
 
 
 /* .row article{
