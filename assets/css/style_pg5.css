@@ -3,6 +3,7 @@
 /* =============================================================================== */
 .gallerypage {
     height: 100vh;
+    scroll-behavior: smooth;
     overflow: auto;
     overflow-anchor: none;
     background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
