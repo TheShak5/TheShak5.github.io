@@ -114,6 +114,14 @@
     color: white;
   }
 
+  /* --------------------------- */
+  /* Publications and Talks Page */
+  /* --------------------------- */
+  .talks p{
+    white-space: normal;
+    margin-bottom: 30px;
+  }
+
   .content a {
     font-size: 2vmin;
   }

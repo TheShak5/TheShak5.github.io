@@ -82,27 +82,27 @@ nav li a {
 }
 
 .content p {
-    min-height: 0px;
+    /* min-height: 0px;
     padding: 0px;
-    margin: 5px;
+    margin: 5px; */
 
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-family: 'Lato';
-    font-weight: 300;
-    font-size: 1.5vmin;
-    letter-spacing: 5px;
+    /* font-weight: 300; */
+    font-size: 2vmin;
+    /* letter-spacing: 5px; */
     white-space: nowrap; /* makes sure it's all on one line */
     /* background-color: #333; */
 }
 
-.talks {
+.talks_sec {
     color: lightgrey;
     font-family: Lato;
 }
 
-.talks ul li {
-    font-size: 2vmin;
+.talks {
+    white-space: normal;
 }
 
 .talktitle {
