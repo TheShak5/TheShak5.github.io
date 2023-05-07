@@ -103,6 +103,8 @@ nav li a {
   object-fit: cover;
   border: 2px solid black;
   box-shadow: 0px 0px 25px 7px white;
+  color: white;
+  font-size: 40px;
 }
 
 .contactinfo h3 {
