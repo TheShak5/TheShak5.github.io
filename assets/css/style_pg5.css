@@ -104,6 +104,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;
+        
+    }
+
+    .gallery img {
         border: 1px solid #ffffff80;
     }
 }
@@ -115,6 +119,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
         column-count: 3;
         border: 1px solid #ffffff80;
     }
+
+    .gallery img {
+        border: 1px solid #ffffff80;
+    }
 }
 
 @media (max-width: 800px) {
@@ -124,6 +132,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
         column-count: 2;
         border: 1px solid #ffffff80;
     }
+
+    .gallery img {
+        border: 1px solid #ffffff80;
+    }
 }
 
 @media (max-width: 400px) {
@@ -131,6 +143,10 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
+        border: 1px solid #ffffff80;
+    }
+
+    .gallery img {
         border: 1px solid #ffffff80;
     }
 }
