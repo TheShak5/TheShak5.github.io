@@ -92,6 +92,7 @@ https: //timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html
     width: 100% !important;
     height: auto !important;
     margin-bottom: 5px;
+    border: 1px solid #ffffff80;
     margin: 10px;
     /* to match column gap */
     transition: filter 1s;
