@@ -1,95 +1,183 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0 0 20px 20px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.accordion-header {
+  background-color: #eee;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-body {
+  padding: 10px;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+</style>
 <head>
-    <title>My Research Page</title>
-    <style>
-        /* Styles for the header */
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-size: 32px;
-        }
-
-        /* Styles for the main content */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px;
-            font-size: 24px;
-        }
-
-        h1 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        p {
-            line-height: 1.5;
-            margin-bottom: 30px;
-            max-width: 800px;
-        }
-
-        /* Styles for the images */
-        .image-container {
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .image-container:hover img {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-        }
-
-        .image-container .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            font-size: 16px;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .image-container:hover .caption {
-            opacity: 1;
-        }
-    </style>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        My Research Page
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <h1>Research Topic</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper est vel leo faucibus, ut convallis
-            magna auctor. Sed iaculis enim a suscipit euismod. Nam ac leo euismod, venenatis lacus non, ultricies arcu.
-            Fusce commodo viverra sem, ac bibendum lacus lobortis id. Fusce id eleifend mauris, eu vestibulum lectus.
-            Donec accumsan ex sit amet nisl elementum, sed dictum augue venenatis. Integer gravida nulla non metus
-            iaculis tincidunt. Aliquam erat volutpat. Suspendisse potenti. Nullam auctor tincidunt sapien vel viverra.
-            Cras quis elit eget elit fringilla fringilla. Donec sit amet facilisis est.
-        </p>
-        <div class="image-container">
-            <img src="assets/img/test.jpg" alt="Image 1">
-            <div class="caption">Caption for Image 1</div>
-        </div>
-        <p>
-            Sed nec hendrerit lorem. Vestibulum et est purus. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia curae; Nullam imperdiet, dui non
+
+    <!-- <main>
+        <h1>About Me</h1>
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>Hi, I'm [Your Name]. I'm a [Your Position] at [Your Institution] in the [Your Department]. My research
+            interests include [Your Research Interests].</p>
+        <h2>Education</h2>
+        <ul>
+            <li>[Your Degree] in [Your Field], [Your Institution], [Graduation Year]</li>
+            <li>[Your Degree] in [Your Field], [Your Institution], [Graduation Year]</li>
+        </ul>
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>[Your Position], [Your Institution], [Start Date] - [End Date]</li>
+            <li>[Your Position], [Your Institution], [Start Date] - [End Date]</li>
+        </ul>
+        <h2>Awards and Honors</h2>
+        <ul>
+            <li>[Name of Award/Honor], [Awarding Organization], [Year]</li>
+            <li>[Name of Award/Honor], [Awarding Organization], [Year]</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; [Year] [Your Name]. All rights reserved.</p>
+    </footer> -->
+
+    <button id="collapse-all">Collapse All</button>
+    <button id="expand-all">Expand All</button>
+    
+    <div class="accordion">
+      <div class="accordion-header">Section 1</div>
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    
+      <div class="accordion-header">Section 2</div>
+      <div class="accordion-body">
+        <p>Suspendisse tincidunt arcu vel velit dignissim euismod.</p>
+      </div>
+    
+      <div class="accordion-header">Section 3</div>
+      <div class="accordion-body">
+        <p>Pellentesque luctus risus vel fermentum efficitur.</p>
+      </div>
+    </div>
+
+    <script>
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
+        const collapseAllBtn = document.querySelector('#collapse-all');
+        const expandAllBtn = document.querySelector('#expand-all');
+
+        // Toggle accordion body when header is clicked
+        accordionHeaders.forEach(header => {
+          header.addEventListener('click', () => {
+            header.classList.toggle('active');
+            const accordionBody = header.nextElementSibling;
+            if (accordionBody.style.display === 'block') {
+              accordionBody.style.display = 'none';
+            } else {
+              accordionBody.style.display = 'block';
+            }
+          });
+        });
+
+        // Collapse all accordion bodies
+        collapseAllBtn.addEventListener('click', () => {
+          accordionHeaders.forEach(header => {
+            header.classList.remove('active');
+            header.nextElementSibling.style.display = 'none';
+          });
+        });
+
+        // Expand all accordion bodies
+        expandAllBtn.addEventListener('click', () => {
+          accordionHeaders.forEach(header => {
+            header.classList.add('active');
+            header.nextElementSibling.style.display = 'block';
+          });
+        });
+
+    </script>
+</body>
+
+</html>
