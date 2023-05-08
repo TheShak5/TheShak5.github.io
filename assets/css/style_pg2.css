@@ -1,0 +1,101 @@
+/* =============================================================================== */
+/* ======================= HTML Tag CSS for the Page ============================= */
+/* =============================================================================== */
+.aboutmepage {
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    overflow-anchor: none;
+    background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
+
+}
+
+/* =============================================================================== */
+/* ========================== Navigation Bar CSS ================================= */
+/* =============================================================================== */
+
+li {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+    font-family: Lato
+}
+
+nav li.active {
+    float: left;
+    display: block;
+    color: white;
+    /*#0c769c */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.8vmin;
+}
+
+.navbar a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #0c769c;
+    ;
+}
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 0px;
+    margin-bottom: 2vh;
+    background-color: #333;
+}
+
+/* =============================================================================== */
+/* ============================== General CSS ==================================== */
+/* =============================================================================== */
+
+
+.row {
+    display: flex;
+    justify-content: normal;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+/* .row article {
+    top: 50%;
+}
+
+.row.row--centered {
+    justify-content: center;
+}
+
+.row.row--centered>* {
+    flex: 0 0 auto;
+}
+
+.row>* {
+    flex: 1 1 auto;
+}
+
+.row>.pull-left {
+    width: 250px;
+    margin-right: 50px;
+    flex: 0 0 auto;
+}
+
+.row>img {
+    margin-top: 25px;
+} */
