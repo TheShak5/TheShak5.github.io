@@ -234,10 +234,9 @@ nav li a {
 
 .slider {
     display: flex;
-    aspect-ratio: 1.5 / 1;
+    aspect-ratio: 5 / 4;
     overflow-x: auto;
-    overflow: hidden;
-    overflow-anchor: none;
+    /* overflow: hidden; */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
@@ -267,8 +266,23 @@ nav li a {
     background-color: #000;
     opacity: 0.75;
     transition: opacity ease 250ms;
+    cursor: pointer; /* Add this line to change the cursor to a pointer */
 }
 
 .slider-nav a:hover {
     opacity:1;
+}
+
+/* https: //css-tricks.com/almanac/properties/s/scrollbar/ */
+.slider::-webkit-scrollbar {
+    width: 1em;
+}
+
+.slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
 }
