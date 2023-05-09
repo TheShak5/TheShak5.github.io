@@ -124,6 +124,23 @@ nav li a {
 /* ============================= Collapsible Box ================================= */
 /* =============================================================================== */
 /* https: //www.youtube.com/watch?v=RvpYnUZRquw */
+.bio h1 {
+    font-family: 'Lato';
+    font-size: 2rem;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    font-family: 'Lato';
+}
+
+.bio p a {
+    color: white;
+}
+
+.bio p a:hover {
+    color:#0c769c;
+}
 
 .collapsible {
     max-width: 100%;
@@ -207,10 +224,27 @@ nav li a {
     padding-right: 15px;
 }
 
-.collapsible-text ul li {
-    list-style-type: circle;
+.collapsible-text p a {
+    color: white;
 }
 
+.collapsible-text p a:hover {
+    color: #2b2ba1;
+}
+
+.collapsible-text ul li {
+    list-style-type: circle;
+    font-family: 'Lato';
+}
+
+.collapsible-text ul li span{
+    color: #2b2ba1;
+    font-family: 'Lato';
+}
+
+.education p {
+    font-size: 1.1rem;
+}
 /* =============================================================================== */
 /* ============================= Image Slideshow ================================= */
 /* =============================================================================== */
@@ -285,4 +319,44 @@ nav li a {
 .slider::-webkit-scrollbar-thumb {
     background-color: darkgrey;
     outline: 1px solid slategrey;
+}
+
+/* =============================================================================== */
+/* =========================== Animated Underline ================================ */
+/* =============================================================================== */
+/* https: //stackoverflow.com/questions/41474622/underlining-text-using-transition-on-page-load-with-a-delay */
+
+.sec {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+@keyframes border {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.sec:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: #f4b942ff;
+    -webkit-animation-name: border;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
