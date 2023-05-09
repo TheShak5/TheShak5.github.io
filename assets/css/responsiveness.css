@@ -167,6 +167,29 @@
     background-color: transparent;
   }
 
+  /* ------------ */
+  /* Contact Page */
+  /* ------------ */
+  .contactinfo h3 {
+    /* text-align: left; */
+
+    text-align: center !important;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 5vw;
+    color: white;
+  }
+
+  .emails p {
+    font-size: 4vw !important;
+    color: white;
+    text-align: center !important;
+  }
+
+  .sociallinks a {
+    font-size: 3vw !important;
+  }
+
   .content a {
     font-size: 2vmin;
   }

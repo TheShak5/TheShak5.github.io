@@ -59,7 +59,7 @@ nav li a {
     align-items: center;
     font-size: 18px;
     padding-top: 0px;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     background-color: #333;
 }
 
@@ -101,23 +101,13 @@ nav li a {
     /* background-color: #333; */
 }
 
-.image_me {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: 2px solid black;
-    box-shadow: 0px 0px 25px 7px white;
-    color: white;
-    font-size: 40px;
-}
-
 .contactinfo h3 {
     /* text-align: left; */
-    margin-top: 100px;
-    text-align: center;
-    font-family: Lato;
+    
+    text-align: center !important;
+    font-family: 'Lato';
     font-weight: bold;
-    font-size: 2vmin;
+    font-size: 2vw;
     color: white;
 }
 
@@ -133,7 +123,7 @@ nav li a {
     text-align: center;
     font-family: Lato;
     font-weight: 300;
-    font-size: 1.5vmin;
+    font-size: 2vmin;
     margin: 5px;
 
     background:
@@ -151,7 +141,7 @@ nav li a {
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #C0C0C0;
+    color: #cdcdcd;
     transition: all .3s;
     background-color: transparent;
 
@@ -196,46 +186,6 @@ nav li a {
     justify-content: flex-start;
 }
 
-article {
-    margin-bottom: 50px;
-}
-
-article.preview {
-    margin-bottom: 0;
-    width: 30vmax;
-    height: 68vmin;
-}
-
-article.contactinfo {
-    margin-bottom: 0;
-    margin-top: 4%;
-    width: 20vmax;
-    height: 20vmin;
-
-    background-color: #80808040;
-}
-
-article .article__header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-article .article__header h3 {
-    font-weight: bold;
-    font-size: 30px;
-    color: #70C1F9;
-    margin-bottom: 5px;
-}
-
-article .article__header h4 {
-    font-weight: normal;
-    font-size: 20px;
-    color: #70C1F9;
-    margin-bottom: 0;
-}
-
 .preview {
     /* width:210px; */
     width: 200px;
@@ -254,31 +204,42 @@ article .article__header h4 {
     /* border: 2px solid #222; */
 }
 
+/* =============================================================================== */
+/* =========================== Animated Underline ================================ */
+/* =============================================================================== */
+/* https: //stackoverflow.com/questions/41474622/underlining-text-using-transition-on-page-load-with-a-delay */
 
-
-
-/* .row article{
-  top: 50%;
+.sec {
+    /* display: inline-block; */
+    position: relative;
+    padding-bottom: 3px;
 }
 
-.row.row--centered {
-  justify-content: center;
+@keyframes border {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 19%
+    }
 }
 
-.row.row--centered>* {
-  flex: 0 0 auto;
+.sec:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: #f4b942ff;
+    -webkit-animation-name: border;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
-
-.row>* {
-  flex: 1 1 auto;
-}
-
-.row>.pull-left {
-  width: 250px;
-  margin-right: 50px;
-  flex: 0 0 auto;
-}
-
-.row>img {
-  margin-top: 25px;
-} */
