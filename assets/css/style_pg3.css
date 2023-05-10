@@ -111,7 +111,11 @@ nav li a {
     font-family: 'Lato';
     color: lightgrey;
     font-size: 1.8vmin;
-    
+}
+
+.topics-row h1 {
+    background-color: #35353585;
+    color: white;
 }
 
 .topic2 {

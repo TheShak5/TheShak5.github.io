@@ -40,6 +40,29 @@
         .image-container:hover .caption {
             opacity: 1;
         }
+
+        .highlight-animation {
+        background-color: yellow; /* Set the highlight color */
+        background-image: linear-gradient(to right, yellow, rgb(255, 51, 0)); /* Set the gradient for the background */
+        background-repeat: no-repeat; /* Prevent the background from repeating */
+        background-size: 0% 100%; /* Start with the background covering 0% of the width */
+        animation-name: highlight; /* Name the animation */
+        animation-duration: 1s; /* Set the duration of the animation */
+        animation-iteration-count: 1; /* Make the animation repeat infinitely */
+        animation-fill-mode: forwards;
+        }
+
+        @keyframes highlight {
+        0% {
+            background-size: 0% 100%; /* Start with the background covering 0% of the width */
+        }
+        100% {
+            background-size: 100% 100%; /* End with the background covering 100% of the width */
+            
+        }
+        }
+
+
     </style>
 </head>
 
@@ -68,7 +91,7 @@
             <div class="caption">Caption for Image 4</div>
         </div>
     </div> -->
-    <script>
+    <!-- <script>
        $(document).ready(function () {
             $('.popup-link').magnificPopup({
                 type: 'image',
@@ -102,7 +125,11 @@
         }
 
         grayscaleGallery();
-    </script>
+    </script> -->
+
+    <span class="highlight-animation">Some highlighted text</span>
+    <span class="highlight-animation">Some highlighted text</span>
+
 </body>
 
 </html>
