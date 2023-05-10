@@ -48,7 +48,6 @@ nav li a {
 .navbar a:hover {
     color: #fff;
     box-shadow: inset 200px 0 0 0 #0c769c;
-    ;
 }
 
 .navbar {
@@ -67,35 +66,66 @@ nav li a {
 /* =============================================================================== */
 
 
-.row {
+.topics-row {
     display: flex;
-    justify-content: normal;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
     padding-bottom: 20px;
+
+    height: 100vh;
+    border: 20px solid grey;
+
 }
 
-/* .row article {
-    top: 50%;
-}
-
-.row.row--centered {
-    justify-content: center;
-}
-
-.row.row--centered>* {
-    flex: 0 0 auto;
-}
-
-.row>* {
-    flex: 1 1 auto;
-}
-
-.row>.pull-left {
-    width: 250px;
-    margin-right: 50px;
-    flex: 0 0 auto;
-}
-
-.row>img {
-    margin-top: 25px;
+/* .view-container {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
 } */
+
+.view-container a {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: center;
+    background-color: grey;
+    color:white;
+    border: 1px solid white;
+    cursor: pointer !important;
+}
+
+.topic1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 30vw;
+    height: 50vh;
+    background: url('../img/gallery/carinanebula.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Lato';
+    color: lightgrey;
+    
+}
+
+.topic2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 30vw;
+    height: 50vh;
+    background: url('../img/dark_matter_web.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Lato';
+    color: lightgrey;
+}
