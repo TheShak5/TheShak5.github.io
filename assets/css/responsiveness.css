@@ -160,6 +160,11 @@
     text-align: center;
   }
 
+  .slider-wrapper {
+    position: relative;
+    max-width: 45%;
+    margin: 0 auto;
+  }
   /* --------------------------- */
   /* Publications and Talks Page */
   /* --------------------------- */
