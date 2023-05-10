@@ -100,6 +100,7 @@ nav li a {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    row-gap: 20px;
     
     width: 50%;
     height: 50vh;
@@ -120,6 +121,7 @@ nav li a {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    row-gap: 20px;
 
     width: 50%;
     height: 50vh;
