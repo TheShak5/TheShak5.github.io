@@ -75,13 +75,10 @@ nav li a {
     height: 100vh;
     border: 20px solid grey;
 
-}
+    font-weight: 600;
+    font-family: 'Lato';
 
-/* .view-container {
-    position: relative;
-    max-width: 50%;
-    margin: 0 auto;
-} */
+}
 
 .view-container a {
     padding: 10px;
@@ -89,7 +86,8 @@ nav li a {
     padding-right: 40px;
 
     text-align: center;
-    background-color: grey;
+    background-color: #35353580;
+    text-decoration: none;
     color:white;
     border: 1px solid white;
     cursor: pointer !important;

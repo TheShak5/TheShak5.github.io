@@ -177,6 +177,13 @@
     display: none;
   }
 
+  /* ------------- */
+  /* Research Page */
+  /* ------------- */
+  .topics-row {
+    flex-direction: column;
+  }
+
   /* --------------------------- */
   /* Publications and Talks Page */
   /* --------------------------- */
