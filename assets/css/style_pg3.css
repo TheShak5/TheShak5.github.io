@@ -131,3 +131,33 @@ nav li a {
     color: lightgrey;
     font-size: 1.8vmin;
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+    .topics-row {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+    .topic1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+
+        font-size: 3vmin !important;
+    }   
+
+    .topic2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+
+        font-size: 3vmin !important;
+    }
+}
