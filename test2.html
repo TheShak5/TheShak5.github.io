@@ -44,7 +44,13 @@
 </head>
 
 <body>
-    <div id="gallery">
+
+    <a href="assets/img/gallery/bullet_cluster.jpg" class="popup-link" style="width:20%">
+        <img src="assets/img/book.jpg" alt="Image caption" style="width:20%">
+    </a>
+
+
+    <!-- <div id="gallery">
         <div class="image-container">
             <img src="assets/img/book.jpg" alt="Image 1">
             <div class="caption">Caption for Image 1</div>
@@ -61,8 +67,20 @@
             <img src="assets/img/test3.jpg" alt="Image 4">
             <div class="caption">Caption for Image 4</div>
         </div>
-    </div>
+    </div> -->
     <script>
+       $(document).ready(function () {
+            $('.popup-link').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                closeOnContentClick: true
+            });
+        });
+
+
+
         function grayscaleGallery() {
             var images = document.querySelectorAll('#gallery img');
 
