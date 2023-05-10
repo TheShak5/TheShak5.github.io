@@ -173,10 +173,10 @@
     object-fit: cover;
   }
 
-  .container {
+  .slider {
     display: none;
   }
-  
+
   /* --------------------------- */
   /* Publications and Talks Page */
   /* --------------------------- */
