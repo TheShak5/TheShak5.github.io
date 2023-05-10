@@ -165,6 +165,12 @@
     max-width: 45%;
     margin: 0 auto;
   }
+  
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
   /* --------------------------- */
   /* Publications and Talks Page */
   /* --------------------------- */
