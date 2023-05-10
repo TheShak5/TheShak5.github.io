@@ -360,3 +360,16 @@ nav li a {
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
+
+/* =============================================================================== */
+/* =============== Page Specifc Responsiveness Media Queries ===================== */
+/* =============================================================================== */
+
+
+/* @media screen and (max-width: 800px) {
+
+    .slider {
+            display: show;
+        }
+}
+   */
