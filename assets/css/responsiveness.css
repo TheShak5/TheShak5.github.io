@@ -172,6 +172,11 @@
     scroll-snap-align: start;
     object-fit: cover;
   }
+
+  .container {
+    display: none;
+  }
+  
   /* --------------------------- */
   /* Publications and Talks Page */
   /* --------------------------- */
