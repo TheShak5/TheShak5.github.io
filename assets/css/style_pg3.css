@@ -101,7 +101,7 @@ nav li a {
     flex-direction: column;
     text-align: center;
     
-    width: 30vw;
+    width: 50%;
     height: 50vh;
     background: url('../img/gallery/carinanebula.jpg');
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ nav li a {
     flex-direction: column;
     text-align: center;
 
-    width: 30vw;
+    width: 50%;
     height: 50vh;
     background: url('../img/dark_matter_web.jpg');
     background-repeat: no-repeat;
