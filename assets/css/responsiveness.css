@@ -182,6 +182,27 @@
   /* ------------- */
   .topics-row {
     flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .topic1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 50vh;
+
+    font-size: 1.8vmin;
+  }
+
+  .topic2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 50vh;
+
+    font-size: 1.8vmin;
   }
 
   /* --------------------------- */
